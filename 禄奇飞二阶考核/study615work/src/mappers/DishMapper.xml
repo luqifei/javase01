@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 映射文件约束头 -->
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 接口实现类(子类)，对应哪个接口类(父类) -->
+<!-- namespace="对应接口类:全限定路径名称" -->
+<mapper namespace="com.fy.Dao.DishDao">
+</mapper>
+

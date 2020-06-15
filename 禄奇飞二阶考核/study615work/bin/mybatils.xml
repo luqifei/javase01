@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ <!-- 加入配置方式:jdbc的四个参数，连接mysql -->
+ <configuration>
+ 	<!--包下别名-->
+	<typeAliases>
+		<package name="com.mybaties.model"/>   
+	</typeAliases>
+  	<environments default="devl">
+  		<environment id="devl">
+  			<transactionManager type="JDBC"></transactionManager>
+  			<dataSource type="POOLED">
+  				<property name="driver" value="com.mysql.jdbc.Driver"/>
+  				<property name="url" value="jdbc:mysql://localhost:3306/hotel_deyuelou"/>
+  				<property name="username" value="root"/>
+  				<property name="password" value="0221"/>
+  			</dataSource>	
+  		</environment>	
+  	</environments>
+  	<!--映射文件-->
+ 	<mappers>
+  		<mapper resource="mappers/DishMapper.xml"/>
+ 	</mappers>  
+ </configuration>
+
+
+ 
+ 
+ 
